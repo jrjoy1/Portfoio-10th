@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><button class="button-primary">Hire Me</button></li>
+                <li><button class="button-primary" id="hireMeBtn">Hire Me</button></li>
             </ul>
         </nav>
         <div class="banner">
@@ -31,7 +31,7 @@
                     Morning because as to society behaved moments.
                 </p>
                 <button class="button-primary"><i class="fa-solid fa-download"></i> Download CV</button>
-                <button class="button-primary"><i class="fa-solid fa-phone"></i> Contact</button>
+                <button class="button-primary" id="contactBtn"><i class="fa-solid fa-phone"></i> Contact</button>
             </div>
             <img
                 class="profile-pic"
@@ -41,8 +41,8 @@
         </div>
     </header>
     <main>
-        <section class="about">
-            <h3 class="section-title">About Me</h3>
+        <section class="about" id="about">
+            <h3 class="section-title" id="aboutTitle">About Me</h3>
             <p class="section-description">
                 I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user.
                 Thousands of clients have procured exceptional resulfs while working with me. Delivering work within time and budget which meets clients requirements in our mata.
@@ -179,7 +179,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="footer-column">
             <h3 class="section-title">Lets Connect</h3>
             <p class="section-description">
@@ -194,13 +194,14 @@
         </div>
         <div class="footer-column contact">
             <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Your Message"></textarea>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <textarea placeholder="Your Message" required></textarea>
                 <button class="button-primary" type="submit">Send</button>
             </form>
         </div>
     </footer>
 </body>
+    <script src="/js/app.js"></script>
 
 </html>
